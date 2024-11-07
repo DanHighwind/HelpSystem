@@ -1,6 +1,7 @@
 package frontend;
 
 import java.awt.*;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -97,7 +98,7 @@ public class CriarConta {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				
-//				cadastrarUsuario.cadastro(campoNome.getText(), campoEmail.getText(), campoSenha.getText());
+
 				
 				
 				usuario.setNome(campoNome.getText());

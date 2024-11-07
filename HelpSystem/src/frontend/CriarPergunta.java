@@ -38,7 +38,6 @@ public class CriarPergunta {
 		
 		
 		JTextField campoPergunta = new JTextField();
-//		campoPergunta.setToolTip("Olá, qual a sua dúvida?");
 		top.add(campoPergunta);
 		
 		

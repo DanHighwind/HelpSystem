@@ -11,8 +11,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
+import backend.Cadastro;
+import backend.Usuario;
 
 public class TelaLogin {
 	
@@ -21,7 +24,9 @@ public class TelaLogin {
 	
 	public void window() {
 	
-		CriarPergunta criarPergunta = new CriarPergunta();
+		TelaInicial telaInicial = new TelaInicial();
+		Cadastro cadastro = new Cadastro();
+		Usuario usuario  = new Usuario();
 	
 		JFrame jframe = new JFrame("Login");
 	
@@ -49,7 +54,7 @@ public class TelaLogin {
 		top.add(senha);
 				
 		
-		JTextField campoSenha = new JTextField();
+		JPasswordField campoSenha = new JPasswordField();
 		top.add(campoSenha);
 		
 		
@@ -58,21 +63,11 @@ public class TelaLogin {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				
-//				cadastrarUsuario.cadastro(campoNome.getText(), campoEmail.getText(), campoSenha.getText());
-				
-//				JOptionPane.showMessageDialog(entrar, "Usuario Cadastrado");
-//				jframe.setVisible(false);
-				
-//				login = 
-				
-				
-				
-				
 				
 				jframe.setVisible(false);
 						
 				
-				criarPergunta.window();
+				telaInicial.window();
 				
 			}
 			
